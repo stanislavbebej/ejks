@@ -31,6 +31,8 @@
     $result = $stm->execute();
 
     // Count rows in result
+    $number_of_rows = 0;
+
     while($row = $result->fetchArray()) {
       $number_of_rows += 1;
     }
