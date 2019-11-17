@@ -1,4 +1,2 @@
-*.gif
-*.png
-*.svg
 src/jks.db
+src/jquery/images
