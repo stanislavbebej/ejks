@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/ejks-sk-image', '.' ]
+  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/ejks-sk-image:$TAG_NAME', '.' ]
 images:
-- 'eu.gcr.io/$PROJECT_ID/ejks-sk-image'
+- 'eu.gcr.io/$PROJECT_ID/ejks-sk-image:$TAG_NAME'
