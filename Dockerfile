@@ -1,10 +1,14 @@
 # Builder container
-FROM alpine:3.10 AS builder
+FROM php:7.3-apache AS builder
 
-RUN apk --no-cache add sqlite
+# Install build tools
+RUN apt-get update && \
+    apt-get install -y sqlite3
 
+# Add application
 COPY db/ .
 
+# Build application
 RUN echo .quit | sqlite3 -init init.sql jks.db
 
 # Runtime container
