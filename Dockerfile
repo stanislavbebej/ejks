@@ -9,9 +9,7 @@ RUN apt-get update && \
 
 # Build database
 COPY db/ .
-RUN echo .quit | sqlite3 -init init.sql ${TEMP_DIR}/jks.db
-
-RUN ls -l ${TEMP_DIR}/jks.db
+RUN  echo .quit | sqlite3 -init init.sql ${TEMP_DIR}/jks.db
 
 # Runtime container
 FROM php:7.3-apache
