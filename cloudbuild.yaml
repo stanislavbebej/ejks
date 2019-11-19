@@ -3,7 +3,7 @@ steps:
   args: [ 'build',
           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a',
           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest',
-          '-f', 'Dockerfile.nginx',
+          '-f', 'Dockerfile.apache',
           '.'
   ]
 - name: 'gcr.io/cloud-builders/docker'
