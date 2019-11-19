@@ -1,6 +1,6 @@
 ### Build
 
-`docker build -t ejks:nginx -f Dockerfile .`
+`docker build -t ejks:nginx -f Dockerfile.nginx .`
 
 ### Run
 
