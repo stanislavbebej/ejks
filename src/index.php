@@ -411,7 +411,7 @@
           Stránku som vytvoril vo svojom voľnom čase a prevádzkujem ju z vlastných úspor. Verím, že cena webhosting-u a domény nevzrastie natoľko, aby som si jej prevádzku nevedel dovoliť. Dúfam, že pomôže aj ostatným častejšie sa zapájať so spevu počas svätej omše, zvlášť mladým ľuďom, ktorí knižku JKS možno v ruke nikdy nedržali, avšak ani svoj mobil nikdy z ruky nepustili :-).
         </p>
         <p>
-          Ak by ste stránku vedeli vylepšiť, prípadne chcete len opraviť chybu, jej zdrojový kód je voľne dostupný na <a href="https://github.com/stanislavbebej/ejks.git" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          Ak by ste stránku vedeli vylepšiť, prípadne chcete len opraviť chybu, jej zdrojový kód je voľne dostupný na <a href="https://github.com/stanislavbebej/ejks.git" target="_blank" rel="noopener noreferrer">GitHub</a>. Testovacia verzia stránky beží v <a href="https://ejks-sk-q4it3p4hba-ew.a.run.app/" target="_blank" rel="noopener noreferrer">Google Cloud Run</a>.
         </p>
       </div>
       <div data-role="footer" data-position="fixed">
