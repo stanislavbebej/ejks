@@ -17,9 +17,9 @@
 
 * stiahnite si [CSV súbor](db/jks.csv) s databázou piesní pre tabuľku `jks`
 * otvorte súbor napr. v programe [LibreOffice](https://www.libreoffice.org/download/download/)
-* zachovajte formát súboru, v prípade LibreOffce zvoľte nastavenia: ![LibreOffce CSV import](/docs/pic/libreOffice.png)
+* zachovajte formát súboru, v prípade LibreOffice zvoľte nastavenia: ![LibreOffce CSV import](/docs/pic/libreOffice.png)
 * upravte zvolený riadok tak, ako je napísaný v knižnej podobe JKS
-* vytvorte *pull request* cez GitHub na zapracovanie zmien
+* vytvorte **pull request** cez GitHub na zapracovanie zmien
 
 ## Development
 
