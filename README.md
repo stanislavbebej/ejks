@@ -49,8 +49,10 @@
 ### Run
 
 ```
-docker run    --rm -p 8080:8080                      --name ejks-sk ejks:apache
-docker run -d --rm -p 8080:8080 -v src:/var/www/html --name ejks-sk ejks:apache
+export PORT=8080
+
+docker run    --rm -p 8080:${PORT} -e PORT=${PORT}                      --name ejks-sk ejks:apache
+docker run    --rm -p 8080:${PORT} -e PORT=${PORT} -v src:/var/www/html --name ejks-sk ejks:apache
 ```
 
 ### Inspect
