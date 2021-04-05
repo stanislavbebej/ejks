@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS jks;
 
 CREATE TABLE IF NOT EXISTS jks (
-  cislo  INTEGER COMMENT 'Cislo piezne z JKS',
+  cislo  INTEGER COMMENT 'Cislo piesne z JKS',
   strofa INTEGER COMMENT 'Poradove cislo strofy',
   text   TEXT    COMMENT 'Text strofy'
 );

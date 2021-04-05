@@ -1,7 +1,7 @@
 ARG TEMP_DIR=/tmp
 
 # Builder container
-FROM php:7.3-apache AS builder
+FROM php:7.4-apache AS builder
 
 # Install build tools
 RUN apt-get update && \
@@ -12,7 +12,7 @@ COPY db/ .
 RUN  echo .quit | sqlite3 -init init.sql ${TEMP_DIR}/jks.db
 
 # Runtime container
-FROM php:7.3-apache
+FROM php:7.4-apache
 
 # ENV PORT 8080
 
