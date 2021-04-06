@@ -38,7 +38,7 @@
 * všetky zmeny vykonávajte vo vlastnej vývojovej vetve alebo projekte
 * vytvorte **pull request** cez GitHub na zapracovanie zmien do **master** vetvy
 
-> Ak máte problém so zápisom do GitHub, môžete mi Vami upravený CSV súbor poslat na môj *stanislav.bebej* email v službe gmail.com.
+> Ak máte problém so zápisom do GitHub, môžete mi Vami upravený CSV súbor poslať na môj *stanislav.bebej* email v službe gmail.com.
 
 ## Development
 
