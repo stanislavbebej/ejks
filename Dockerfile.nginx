@@ -1,7 +1,7 @@
 ARG TEMP_DIR=/tmp
 
 # Builder container
-FROM alpine:3 AS builder
+FROM alpine:3.13 AS builder
 
 # Install build tools
 RUN apk --no-cache add sqlite
