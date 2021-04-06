@@ -1,33 +1,33 @@
 # Build using Apache Dockerfile
-# steps:
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: [ 'build',
-#           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a',
-#           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest',
-#           '-f', 'Dockerfile.apache',
-#           '.'
-#   ]
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a']
-# - name: 'gcr.io/cloud-builders/gcloud'
-#   args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a', '--region', 'europe-west1','--platform', 'managed', '--quiet']
-# images:
-# - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a'
-# - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest'
-
-# Build using Nginx Dockerfile
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build',
-          '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n',
+          '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a',
           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest',
-          '-f', 'Dockerfile.nginx',
+          '-f', 'Dockerfile.apache',
           '.'
   ]
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n']
+  args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n', '--region', 'europe-west1','--platform', 'managed', '--quiet']
+  args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a', '--region', 'europe-west1','--platform', 'managed', '--quiet']
 images:
-- 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n'
+- 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}a'
 - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest'
+
+# Build using Nginx Dockerfile
+# steps:
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: [ 'build',
+#           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n',
+#           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest',
+#           '-f', 'Dockerfile.nginx',
+#           '.'
+#   ]
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n']
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n', '--region', 'europe-west1','--platform', 'managed', '--quiet']
+# images:
+# - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}n'
+# - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest'
