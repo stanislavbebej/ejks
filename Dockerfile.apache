@@ -1,18 +1,18 @@
 ARG TEMP_DIR=/tmp
 
 # Builder container
-FROM php:7.4-apache AS builder
+FROM php:8.1-apache AS builder
 
 # Install build tools
-RUN apt-get update && \
-    apt-get install -y sqlite3
+RUN apt-get update \
+    && apt-get install -y sqlite3
 
 # Build database
 COPY db/ .
 RUN  echo .quit | sqlite3 -init init.sql ${TEMP_DIR}/jks.db
 
 # Runtime container
-FROM php:7.4-apache
+FROM php:8.1-apache
 
 # Use the PORT environment variable in Apache configuration files.
 RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
