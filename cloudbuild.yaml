@@ -1,15 +1,15 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build',
-          '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}',
+          '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:${TAG_NAME}',
           '-t', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest',
           '-f', 'Dockerfile',
           '.'
   ]
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}']
+  args: ['push', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:${TAG_NAME}']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}', '--region', 'europe-west1','--platform', 'managed', '--quiet']
+  args: ['beta', 'run', 'deploy', '${PROJECT_ID}', '--image', 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:${TAG_NAME}', '--region', 'europe-west1','--platform', 'managed', '--quiet']
 images:
-- 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:v${TAG_NAME}'
+- 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:${TAG_NAME}'
 - 'eu.gcr.io/${PROJECT_ID}/${PROJECT_ID}-image:latest'
