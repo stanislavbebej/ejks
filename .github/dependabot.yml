@@ -1,0 +1,17 @@
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - commit-message:
+      prefix: fix(actions)
+    directory: "/" # Workflow files stored in the default location of `.github/workflows`. (You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.)
+    package-ecosystem: github-actions
+    schedule:
+      interval: monthly
+  - commit-message:
+      prefix: fix(docker)
+    directory: /
+    package-ecosystem: docker
+    schedule:
+      interval: monthly

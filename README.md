@@ -44,17 +44,15 @@
 
 ### Build
 
-`docker build -t ejks:apache -f Dockerfile.apache .`
+`docker build --no-cache -t ejks:nginx -f Dockerfile .`
 
 ### Run
 
 ```bash
-export PORT=8080
-
-docker run --rm -p 8080:${PORT} -e PORT=${PORT} --name ejks-sk ejks:apache
+docker run --rm -p 8080:80 --name ejks-sk ejks:nginx
 
 # použi zdrojový kód stránky z lokálneho úložiska, namiesto toho v kontajneri
-# docker run --rm -p 8080:${PORT} -e PORT=${PORT} -v src:/var/www/html --name ejks-sk ejks:apache
+# docker run --rm -p 8080:80 -v src:/usr/share/nginx/html --name ejks-sk ejks:nginx
 ```
 
 ### Inspect
