@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/stanislavbebej/ejks/compare/v2.0.1...v2.0.2) (2024-01-05)
+
+
+### Bug Fixes
+
+* **ci:** remove unexpected input ([b42bdf3](https://github.com/stanislavbebej/ejks/commit/b42bdf37c1c5e570147c60cf5375668b6c539424))
+* **nginx:** redirect 404 requests home ([a65a537](https://github.com/stanislavbebej/ejks/commit/a65a537caf013324ae8046a7a26f6cbcfa6c6ffc))
+
 ## [2.0.1](https://github.com/stanislavbebej/ejks/compare/v2.0.0...v2.0.1) (2024-01-02)
 
 
