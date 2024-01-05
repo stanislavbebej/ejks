@@ -23,6 +23,9 @@ RUN mkdir /ejks \
 # Runtime container
 FROM nginx:1.25.3-alpine-slim
 
+# Replace default configuration
+COPY nginx-default-server.conf /etc/nginx/conf.d/default.conf
+
 # Add application
 COPY --from=builder /ejks /usr/share/nginx/html
 COPY src/favicon.ico src/googlee78c4ec223f14545.html /usr/share/nginx/html/
