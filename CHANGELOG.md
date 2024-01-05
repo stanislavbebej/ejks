@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/stanislavbebej/ejks/compare/v2.0.2...v2.0.3) (2024-01-05)
+
+
+### Bug Fixes
+
+* **nginx:** return 404 and redirect ([0fe5368](https://github.com/stanislavbebej/ejks/commit/0fe5368da9459786b265b32813c7dd8b298bfca0))
+
 ## [2.0.2](https://github.com/stanislavbebej/ejks/compare/v2.0.1...v2.0.2) (2024-01-05)
 
 
