@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/stanislavbebej/ejks/compare/v2.0.3...v2.1.0) (2024-01-06)
+
+
+### Features
+
+* **327:** nech je zvelebeny boh ([f4010cf](https://github.com/stanislavbebej/ejks/commit/f4010cfc29e807896ee7840093afd4292e54ebfb))
+* **484:** tiekla voda z pravej strany ([c83c041](https://github.com/stanislavbebej/ejks/commit/c83c041b480d11d1814137364b87bc9d541978d7))
+* **484:** yzopom ma pokrop pane ([7ab546a](https://github.com/stanislavbebej/ejks/commit/7ab546a49cbb5aa3f3e8b9ac613b6afd722d15c3))
+* **501:** jezis maria i jozef ([23e6883](https://github.com/stanislavbebej/ejks/commit/23e68835c8b408f926f825c1ed832803913c548b))
+* **507:** boze ktory stav manzelsky ([406b4b7](https://github.com/stanislavbebej/ejks/commit/406b4b75b5da412bd101c735edd74d590950da56))
+* **526:** teba boze chvalime ([a406435](https://github.com/stanislavbebej/ejks/commit/a4064354d688b2fd637bdb6eef5cc5cd1047d641))
+
 ## [2.0.3](https://github.com/stanislavbebej/ejks/compare/v2.0.2...v2.0.3) (2024-01-05)
 
 
