@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.2.0](https://github.com/stanislavbebej/ejks/compare/v2.1.0...v2.2.0) (2024-01-30)
+
+
+### Features
+
+* **334:** hori nasa laska ([26ae165](https://github.com/stanislavbebej/ejks/commit/26ae1655b85fd242d6cd600332ce1b47ffc9b16d))
+
+
+### Bug Fixes
+
+* **198:** missing song title ([06769b7](https://github.com/stanislavbebej/ejks/commit/06769b799dc7c9903fcc929f921d3b9f82030bab))
+* **72:** preklep ([f3fd41f](https://github.com/stanislavbebej/ejks/commit/f3fd41f87dcad0e6dcc9b96abf7ee7a8c600735c))
+* **77:** missing song title ([7dcaea3](https://github.com/stanislavbebej/ejks/commit/7dcaea359fe3930b359c9a13d847e6fa1ead09b4))
+* **docker:** bump php from 8.3.1-cli-alpine3.19 to 8.3.2-cli-alpine3.19 ([0b195cf](https://github.com/stanislavbebej/ejks/commit/0b195cf619a2a3b019aa312535c31d17c2297fde))
+* **nginx:** return 410 and redirect ([4dbb9cf](https://github.com/stanislavbebej/ejks/commit/4dbb9cfb43311473957b6f30324c555fd23ca72b))
+* remove redundant space ([8675df8](https://github.com/stanislavbebej/ejks/commit/8675df809040f1e0a583240d6e6e5719eab35f8b))
+* výmena znaku pomlčky ([a8a865e](https://github.com/stanislavbebej/ejks/commit/a8a865eafddcffeffd9f18c36270116b2e90db7a))
+
 ## [2.1.0](https://github.com/stanislavbebej/ejks/compare/v2.0.3...v2.1.0) (2024-01-06)
 
 
