@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/stanislavbebej/ejks/compare/v2.3.0...v2.3.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* sort sitemap contents ([c0765b9](https://github.com/stanislavbebej/ejks/commit/c0765b99df1367e3c72180f1dfeaa855933550ed))
+
 ## [2.3.0](https://github.com/stanislavbebej/ejks/compare/v2.2.0...v2.3.0) (2024-01-30)
 
 
