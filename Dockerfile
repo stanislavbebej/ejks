@@ -20,6 +20,9 @@ RUN mkdir /ejks \
     && echo "SELECT cislo FROM jks WHERE strofa = 0 ORDER BY cislo" | sqlite3 jks.db > piesen.list \
     && for i in $(cat piesen.list); do php-cgi -q jks.php id=$i | minify --type html | tr -d '\n' > /ejks/$i.html; done
 
+# Build sitemap.txt
+RUN find /ejks -type f -name '*.html' | sed 's#/ejks#https://ejks.sk#g' > /ejks/sitemap.txt
+
 # Runtime container
 FROM nginx:1.25.3-alpine-slim
 
