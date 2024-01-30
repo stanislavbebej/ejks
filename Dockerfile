@@ -21,7 +21,7 @@ RUN mkdir /ejks \
     && for i in $(cat piesen.list); do php-cgi -q jks.php id=$i | minify --type html | tr -d '\n' > /ejks/$i.html; done
 
 # Build sitemap.txt
-RUN find /ejks -type f -name '*.html' | sed 's#/ejks#https://ejks.sk#g' > /ejks/sitemap.txt
+RUN find /ejks -type f -name '*.html' | sed 's#/ejks#https://ejks.sk#g' | sort -u > /ejks/sitemap.txt
 
 # Runtime container
 FROM nginx:1.25.3-alpine-slim
