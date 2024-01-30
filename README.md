@@ -44,15 +44,15 @@
 
 ### Build
 
-`docker build --no-cache -t ejks:nginx -f Dockerfile .`
+`docker build --no-cache -t ejks:latest -f Dockerfile .`
 
 ### Run
 
 ```bash
-docker run --rm -p 8080:80 --name ejks-sk ejks:nginx
+docker run --rm -p 8080:80 --name ejks-sk ejks:latest
 
 # použi zdrojový kód stránky z lokálneho úložiska, namiesto toho v kontajneri
-# docker run --rm -p 8080:80 -v src:/usr/share/nginx/html --name ejks-sk ejks:nginx
+# docker run --rm -p 8080:80 -v src:/usr/share/nginx/html --name ejks-sk ejks:latest
 ```
 
 ### Inspect
