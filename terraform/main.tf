@@ -34,7 +34,8 @@ resource "google_cloudbuild_trigger" "github-pull-request" {
     owner = "stanislavbebej"
     name  = "ejks"
     pull_request {
-      branch = "^master$"
+      branch          = "^master$"
+      comment_control = "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"
     }
 
   }
