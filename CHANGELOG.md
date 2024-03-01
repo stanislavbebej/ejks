@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.0](https://github.com/stanislavbebej/ejks/compare/v2.3.1...v2.4.0) (2024-03-01)
+
+
+### Features
+
+* build dev infrastructure with terraform ([b4cbabb](https://github.com/stanislavbebej/ejks/commit/b4cbabb3bb7626e17f8cad10879c56067acb05a2))
+
+
+### Bug Fixes
+
+* prevent public PRs from running Cloud Build ([b3c7523](https://github.com/stanislavbebej/ejks/commit/b3c75231c0b8a33e635b549db40cc26095aa1756))
+
 ## [2.3.1](https://github.com/stanislavbebej/ejks/compare/v2.3.0...v2.3.1) (2024-01-30)
 
 
