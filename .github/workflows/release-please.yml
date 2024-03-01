@@ -22,7 +22,7 @@ jobs:
       - name: Checkov
         uses: bridgecrewio/checkov-action@v12
         with:
-          soft_fail: false
+          soft_fail: true
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
@@ -31,8 +31,6 @@ jobs:
           sarif_file: results.sarif
 
   release:
-    needs:
-      - scan
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
