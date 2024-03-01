@@ -1,7 +1,4 @@
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
@@ -9,28 +6,11 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  security-events: write
 
 name: release-please
 
 jobs:
-  scan:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Checkov
-        uses: bridgecrewio/checkov-action@v12
-        with:
-          soft_fail: true
-
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3
-        if: success() || failure()
-        with:
-          sarif_file: results.sarif
-
-  release:
+  release-please:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
