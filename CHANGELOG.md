@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.4.0](https://github.com/stanislavbebej/ejks/compare/v2.3.1...v2.4.0) (2024-03-01)
+
+
+### Features
+
+* add security scan ([994b22a](https://github.com/stanislavbebej/ejks/commit/994b22a59f10142bc97a28afa3e33057f9ce0f68))
+* build dev infrastructure with terraform ([b4cbabb](https://github.com/stanislavbebej/ejks/commit/b4cbabb3bb7626e17f8cad10879c56067acb05a2))
+
+
+### Bug Fixes
+
+* **docker:** bump nginx from 1.25.3-alpine-slim to 1.25.4-alpine-slim ([816df2f](https://github.com/stanislavbebej/ejks/commit/816df2f778db2a7701fb6b65b859a26e933b775a))
+* **docker:** bump php from 8.3.2-cli-alpine3.19 to 8.3.3-cli-alpine3.19 ([4608986](https://github.com/stanislavbebej/ejks/commit/46089860631c60987408fec07bc5355f77395f3f))
+* prevent public PRs from running Cloud Build ([b3c7523](https://github.com/stanislavbebej/ejks/commit/b3c75231c0b8a33e635b549db40cc26095aa1756))
+
 ## [2.3.1](https://github.com/stanislavbebej/ejks/compare/v2.3.0...v2.3.1) (2024-01-30)
 
 
