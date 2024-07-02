@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.2](https://github.com/stanislavbebej/ejks/compare/v2.4.1...v2.4.2) (2024-07-02)
+
+
+### Bug Fixes
+
+* **docker:** bump nginx from 1.26.0-alpine-slim to 1.27.0-alpine-slim ([ffcb5bb](https://github.com/stanislavbebej/ejks/commit/ffcb5bbf2f826b5761266ecd50549f7f7115a915))
+* **docker:** bump php from 8.3.6-cli-alpine3.19 to 8.3.8-cli-alpine3.19 ([dd50cd5](https://github.com/stanislavbebej/ejks/commit/dd50cd5454da270dd880ecc48df60682963f8e26))
+
 ## [2.4.1](https://github.com/stanislavbebej/ejks/compare/v2.4.0...v2.4.1) (2024-05-02)
 
 
