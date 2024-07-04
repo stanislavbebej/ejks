@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.3](https://github.com/stanislavbebej/ejks/compare/v2.4.2...v2.4.3) (2024-07-04)
+
+
+### Bug Fixes
+
+* release please action migration ([0ad1964](https://github.com/stanislavbebej/ejks/commit/0ad1964438c6b89677081bfb6a08c456b45af70f))
+
+
+### Miscellaneous Chores
+
+* release 2.4.3 ([beaa61c](https://github.com/stanislavbebej/ejks/commit/beaa61ceb4e4c024da4932aa6c7473e7947f133e))
+
 ## [2.4.2](https://github.com/stanislavbebej/ejks/compare/v2.4.1...v2.4.2) (2024-07-02)
 
 
