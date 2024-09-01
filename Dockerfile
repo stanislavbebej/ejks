@@ -1,5 +1,5 @@
 # Builder container
-FROM php:8.3.8-cli-alpine3.19 AS builder
+FROM php:8.3.11-cli-alpine3.19 AS builder
 
 # Install build tools
 RUN apk --no-cache add sqlite \
