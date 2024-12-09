@@ -1,5 +1,5 @@
 # Builder container
-FROM php:8.3.8-cli-alpine3.19 AS builder
+FROM php:8.4.1-cli-alpine3.19 AS builder
 
 # Install build tools
 RUN apk --no-cache add sqlite \
@@ -24,7 +24,7 @@ RUN mkdir /ejks \
 RUN find /ejks -type f -name '*.html' | sed 's#/ejks#https://ejks.sk#g' | sort -u > /ejks/sitemap.txt
 
 # Runtime container
-FROM nginx:1.27.0-alpine-slim
+FROM nginx:1.27.3-alpine-slim
 
 # Replace default configuration
 COPY nginx-default-server.conf /etc/nginx/conf.d/default.conf
