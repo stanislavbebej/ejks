@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.4](https://github.com/stanislavbebej/ejks/compare/v2.4.3...v2.4.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* **150:** spelling ([#43](https://github.com/stanislavbebej/ejks/issues/43)) ([9e4c614](https://github.com/stanislavbebej/ejks/commit/9e4c6142f8811d461d9a02f641987b82f555d103))
+* **docker:** bump the docker-deps group with 2 updates ([66b9210](https://github.com/stanislavbebej/ejks/commit/66b9210f63b79836364345376391882900e80e26))
+
 ## [2.4.3](https://github.com/stanislavbebej/ejks/compare/v2.4.2...v2.4.3) (2024-07-04)
 
 
