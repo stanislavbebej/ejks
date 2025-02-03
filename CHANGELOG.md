@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.5](https://github.com/stanislavbebej/ejks/compare/v2.4.4...v2.4.5) (2025-02-03)
+
+
+### Bug Fixes
+
+* **257:** spelling ([#46](https://github.com/stanislavbebej/ejks/issues/46)) ([1dafab6](https://github.com/stanislavbebej/ejks/commit/1dafab69135a04cd896a903de5be629a39eb7437))
+
 ## [2.4.4](https://github.com/stanislavbebej/ejks/compare/v2.4.3...v2.4.4) (2024-12-09)
 
 
