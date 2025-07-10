@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.6](https://github.com/stanislavbebej/ejks/compare/v2.4.5...v2.4.6) (2025-07-10)
+
+
+### Bug Fixes
+
+* **429:** typo fix ([#49](https://github.com/stanislavbebej/ejks/issues/49)) ([b264162](https://github.com/stanislavbebej/ejks/commit/b26416267a485b7f74bc469980f9f7e9c228692d))
+* **docker:** bump nginx in the docker-deps group ([9f2f472](https://github.com/stanislavbebej/ejks/commit/9f2f472e66f17398bb804eafd19bf044939769e0))
+
 ## [2.4.5](https://github.com/stanislavbebej/ejks/compare/v2.4.4...v2.4.5) (2025-02-03)
 
 
