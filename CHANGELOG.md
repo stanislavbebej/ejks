@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.7](https://github.com/stanislavbebej/ejks/compare/v2.4.6...v2.4.7) (2025-07-22)
+
+
+### Bug Fixes
+
+* **261:** typo fix ([#51](https://github.com/stanislavbebej/ejks/issues/51)) ([4cf1c00](https://github.com/stanislavbebej/ejks/commit/4cf1c00181632a7eadec7d76e4946e79f5e27910))
+
 ## [2.4.6](https://github.com/stanislavbebej/ejks/compare/v2.4.5...v2.4.6) (2025-07-10)
 
 
