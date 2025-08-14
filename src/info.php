@@ -28,7 +28,7 @@
         Aj keď v mnohých kostoloch sú JKS k dispozícii pri vstupe do chrámu, nie je to pravidlom. Zobrať si so sebou svoj mobil však zabudnem málokedy. Chýbala mi ale funkčná a jednoduchá forma, ako doň dostať JKS. Na internete (1.) sa dá nájsť oficiálna stránka JKS od Spolku Svätého Vojtecha (SSV). Nie je však určená pre mobilné zariadenia a zrejme kvôli ochrane textov sú tieto zobrazované vo forme obrázka, ktoré okrem ostatných dekorácií, zbytočne spomaľujú jej načítanie. Ďalší kandidát (2.), ktorý je zrejme tiež len súkromnou iniciatívou "nespokojného" katolíka a poslúžil ako inšpirácia pre môj projekt, postráda formu a používateľskú prívetivosť pri práci na mobilnom zariadení. Na jednej webstránke sú všetky texty, čo ju na jednej strane umožňuje otvoriť si doma a v kostole s ňou pracovať bez potreby internetu, na druhej strane jej veľkosť spomaľuje jej načítanie cez mobilný internet, ťažko sa na nej pohybuje a obsahuje reklamy.
       </p>
       <p>
-        Môj projekt www.ejks.sk sa snaží o stránku s textami piesní z JKS, ktorá by bola:
+        Môj projekt elektronickej JKS sa snaží o stránku s textami piesní z JKS, ktorá by bola:
       <ul>
         <li>prispôsobená pre mobilné zariadenia</li>
         <li>zdrojom údajov pre dataprojektory</li>

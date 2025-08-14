@@ -24,7 +24,7 @@
 ### Nová pieseň
 
 1. do CSV súboru pridajte toľko riadkov, koľko má zadávaná pieseň strof a prípočítajte jeden riadok pre nadpis
-1. ako je uvedené v *databázovej štruktúre* pridajte:
+1. ako je uvedené v _databázovej štruktúre_ pridajte:
    1. riadok pre nadpis s číslom piesne v prvom stĺpci, poradovým čislom `0` v druhom a jej nadpisom v treťom stĺpci
    1. do ďalšieho riadku opäť to isté číslo piesne do prvého stĺpca, poradové čislo strofy (napr. `1`) do druhého a text celej strofy do tretieho
    1. pokračujte týmto spôsobom, kým nie sú zapísané všetky strofy piesne
@@ -32,12 +32,12 @@
 ### Existujúca pieseň
 
 1. v CSV súbore vyhľadajte pieseň, ktorú chcete upraviť
-1. upravte text strofy v treťom stĺpci, ako je uvedené v *databázovej štruktúre* vyššie
-1. v prípade, že chcete rozšíriť pieseň o ďalšiu strofu, postupujte podľa postupu, ako zadať novú pieseň - bod *2.2*
+1. upravte text strofy v treťom stĺpci, ako je uvedené v _databázovej štruktúre_ vyššie
+1. v prípade, že chcete rozšíriť pieseň o ďalšiu strofu, postupujte podľa postupu, ako zadať novú pieseň - bod _2.2_
 
 ## Zápis do GitHub
 
-* všetky zmeny vykonávajte vo vlastnej vývojovej vetve alebo projekte
-* vytvorte **pull request** cez GitHub na zapracovanie zmien do **master** vetvy
+- všetky zmeny vykonávajte vo vlastnej vývojovej vetve alebo projekte
+- vytvorte **pull request** cez GitHub na zapracovanie zmien do **master** vetvy
 
-> Ak máte problém so zápisom do GitHub, môžete mi Vami upravený CSV súbor poslať na môj *stanislav.bebej* email v službe gmail.com.
+> Ak máte problém so zápisom do GitHub, môžete mi Vami upravený CSV súbor poslať na môj _stanislav.bebej_ email v službe gmail.com.
