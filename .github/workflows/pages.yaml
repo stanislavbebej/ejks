@@ -16,10 +16,6 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-# defaults:
-#   run:
-#     shell: sh
-
 jobs:
   deploy:
     container: php:8.4.1-cli-alpine3.19
@@ -37,8 +33,6 @@ jobs:
 
       - name: Build content
         run: |
-          printenv
-
           BUILD_DIR="$(pwd)/public"
           TMP_DIR=$(mktemp -d)
 
