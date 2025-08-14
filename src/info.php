@@ -56,7 +56,7 @@
       </p>
       <div data-role="navbar">
         <ul>
-          <li><a href="." data-icon="search" data-transition="none"></a></li>
+          <li><a href="./" data-icon="search" data-transition="none"></a></li>
           <li><a href="info.html" data-icon="info" class="ui-state-disabled"></a></li>
         </ul>
       </div>
