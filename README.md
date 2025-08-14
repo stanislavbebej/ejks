@@ -4,12 +4,12 @@
 
 ### Tabuľka `jks`
 
-Číslo piesne | Poradové číslo strofy | Text strofy
------------- | --------------------- | -----------
-247          | 0                     | Ó, Ježišu náš najmilší
-247          | 1                     | Ó, Ježišu náš najmilší, - k obete sa schádzame, - ktorú tebe v čas terajší - skrze kňaza konáme. - Prijmi teda do milosti - vďačnú službu tu od nás, - aby s nami vo večnosti - tešili sa svätí z nás.
-247          | 2                     | Tak je, buď vždy Bohu chvála, - jeho česť vždy hľadajme, - nech ho všetci ľudia chvália, - vrúcnym srdcom žiadajme, - lebo Otcom všetkých je nás, - ktorý nás tak miloval, - že i Syna svojho za nás - na smrť dať neľutoval.
-247          | ...                   | ...
+| Číslo piesne | Poradové číslo strofy | Text strofy                                                                                                                                                                                                                   |
+| ------------ | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 247          | 0                     | Ó, Ježišu náš najmilší                                                                                                                                                                                                        |
+| 247          | 1                     | Ó, Ježišu náš najmilší, - k obete sa schádzame, - ktorú tebe v čas terajší - skrze kňaza konáme. - Prijmi teda do milosti - vďačnú službu tu od nás, - aby s nami vo večnosti - tešili sa svätí z nás.                        |
+| 247          | 2                     | Tak je, buď vždy Bohu chvála, - jeho česť vždy hľadajme, - nech ho všetci ľudia chvália, - vrúcnym srdcom žiadajme, - lebo Otcom všetkých je nás, - ktorý nás tak miloval, - že i Syna svojho za nás - na smrť dať neľutoval. |
+| 247          | ...                   | ...                                                                                                                                                                                                                           |
 
 > Strofa s poradovým čislom `0` je nadpis piesne.
 
@@ -17,7 +17,9 @@
 
 1. stiahnite si [CSV súbor](db/jks.csv) s databázou piesní pre tabuľku `jks`
 1. otvorte súbor napr. v programe [LibreOffice](https://www.libreoffice.org/download/download/)
-1. zachovajte formát súboru, v prípade LibreOffice zvoľte nastavenia: ![LibreOffce CSV import](/docs/pic/libreOffice.png)
+1. zachovajte formát súboru, v prípade LibreOffice zvoľte nastavenia:
+
+   ![LibreOffce CSV import](docs/pic/libreOffice.png)
 
 ### Nová pieseň
 
@@ -39,22 +41,3 @@
 * vytvorte **pull request** cez GitHub na zapracovanie zmien do **master** vetvy
 
 > Ak máte problém so zápisom do GitHub, môžete mi Vami upravený CSV súbor poslať na môj *stanislav.bebej* email v službe gmail.com.
-
-## Development
-
-### Build
-
-`docker build --no-cache -t ejks:latest -f Dockerfile .`
-
-### Run
-
-```bash
-docker run --rm -p 8080:80 --name ejks-sk ejks:latest
-
-# použi zdrojový kód stránky z lokálneho úložiska, namiesto toho v kontajneri
-# docker run --rm -p 8080:80 -v src:/usr/share/nginx/html --name ejks-sk ejks:latest
-```
-
-### Inspect
-
-`docker exec -it ejks-sk /bin/sh`
