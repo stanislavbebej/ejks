@@ -41,7 +41,7 @@ jobs:
 
           # Install build tools
           apk --no-cache add sqlite
-          wget -qO - https://github.com/tdewolff/minify/releases/download/v2.23.11/minify_linux_amd64.tar.gz | tar -xf - -C /usr/local/bin minify
+          wget -qO - https://github.com/tdewolff/minify/releases/download/v2.23.11/minify_linux_amd64.tar.gz | tar -zxf - -C /usr/local/bin minify
 
           # Prepare source files
           cp -R db/* src/* $TMP_DIR
