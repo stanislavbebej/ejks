@@ -36,6 +36,10 @@ jobs:
 
       - name: Build content
         run: |
+          id
+          pwd
+          ls -l
+
           BUILD_DIR=/public
           TMP_DIR=$(mktemp -d)
 
@@ -51,7 +55,7 @@ jobs:
           echo .quit | sqlite3 -init init.sql jks.db
 
           # Build static content
-          RUN mkdir -p $BUILD_DIR
+          mkdir -p $BUILD_DIR
 
           php index.php | minify --type html | tr -d '\n' >${BUILD_DIR}/index.html
           php info.php | minify --type html | tr -d '\n' >${BUILD_DIR}/info.html
