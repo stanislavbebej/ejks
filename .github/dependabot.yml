@@ -1,22 +1,13 @@
 version: 2
+
 updates:
   - commit-message:
-      prefix: fix(actions)
+      prefix: ci(deps)"
     directory: /
     package-ecosystem: github-actions
     schedule:
       interval: monthly
     groups:
       actions-deps:
-        patterns:
-          - '*'
-  - commit-message:
-      prefix: fix(docker)
-    directory: /
-    package-ecosystem: docker
-    schedule:
-      interval: monthly
-    groups:
-      docker-deps:
         patterns:
           - '*'
