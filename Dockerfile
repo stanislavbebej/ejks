@@ -24,7 +24,7 @@ RUN mkdir /ejks \
 RUN find /ejks -type f -name '*.html' | sed 's#/ejks#https://ejks.sk#g' | sort -u > /ejks/sitemap.txt
 
 # Runtime container
-FROM nginx:1.29.0-alpine-slim
+FROM nginx:1.29.1-alpine-slim
 
 # Replace default configuration
 COPY nginx-default-server.conf /etc/nginx/conf.d/default.conf
