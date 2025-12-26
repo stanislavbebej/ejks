@@ -1,0 +1,82 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    container: php:cli-alpine
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare container
+        run: |
+          apk update && apk --no-cache add git git-lfs
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Pages
+        id: setup-pages
+        uses: actions/configure-pages@v5
+
+      - name: Build content
+        id: build-content
+        run: |
+          BUILD_DIR="${WORKSPACE}/_site"
+          echo "static_dir=$BUILD_DIR" >>$GITHUB_OUTPUT
+
+          TMP_DIR=$(mktemp -d)
+
+          # Install build tools
+          apk --no-cache add sqlite
+          wget -qO - https://github.com/tdewolff/minify/releases/download/v2.23.11/minify_linux_amd64.tar.gz | tar -zxf - -C /usr/local/bin minify
+
+          # Prepare source files
+          cp -R db/* _legacy/src/* $TMP_DIR
+          cd $TMP_DIR
+
+          # Build database
+          echo .quit | sqlite3 -init init.sql jks.db
+
+          # Build static content
+          mkdir -p $BUILD_DIR
+
+          php index.php | minify --type html | tr -d '\n' >${BUILD_DIR}/index.html
+          php info.php  | minify --type html | tr -d '\n' >${BUILD_DIR}/info.html
+
+          echo "SELECT cislo FROM jks WHERE strofa = 0 ORDER BY cislo" | sqlite3 jks.db >piesen.list
+          for i in $(cat piesen.list); do php-cgi -q jks.php id=$i | minify --type html | tr -d '\n' >${BUILD_DIR}/$i.html; done
+
+          # Build sitemap.txt
+          find $BUILD_DIR -type f -name '*.html' | sed "s#${BUILD_DIR}#${PAGES_URL}#g" | sort -u >${BUILD_DIR}/sitemap.txt
+
+          # Add static content
+          cp -R favicon.ico googlee78c4ec223f14545.html ico $BUILD_DIR
+        env:
+          PAGES_URL: ${{ steps.setup-pages.outputs.base_url }}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.build-content.outputs.static_dir }}
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
