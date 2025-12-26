@@ -28,7 +28,7 @@ jobs:
           apk update && apk --no-cache add git git-lfs
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           lfs: true
 
@@ -73,7 +73,7 @@ jobs:
           PAGES_URL: ${{ steps.setup-pages.outputs.base_url }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ steps.build-content.outputs.static_dir }}
 
