@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.5.0](https://github.com/stanislavbebej/ejks/compare/v2.4.6...v2.5.0) (2025-12-26)
+
+
+### Features
+
+* archive legacy code ([c9f576e](https://github.com/stanislavbebej/ejks/commit/c9f576e90aef61efc3e34842a6a40aaad5f2cffd))
+
+
+### Bug Fixes
+
+* **261:** typo fix ([#51](https://github.com/stanislavbebej/ejks/issues/51)) ([4cf1c00](https://github.com/stanislavbebej/ejks/commit/4cf1c00181632a7eadec7d76e4946e79f5e27910))
+* **actions:** bump actions/checkout in the actions-deps group ([d99584d](https://github.com/stanislavbebej/ejks/commit/d99584dd754202ff1bc58d2a094d6638019a1ed0))
+* **actions:** bump github/codeql-action in the actions-deps group ([f8f20e5](https://github.com/stanislavbebej/ejks/commit/f8f20e5d0ca30c92bfd25921dcbe5a8241f92b98))
+* **docker:** bump nginx in the docker-deps group ([aced678](https://github.com/stanislavbebej/ejks/commit/aced67879b2805acb5e14729c0a8a235810fd761))
+* **docker:** bump nginx in the docker-deps group ([70f54a0](https://github.com/stanislavbebej/ejks/commit/70f54a09cf4f644dccaea5c8a5aca7bf3e7d42aa))
+* **docker:** bump nginx in the docker-deps group ([16d5862](https://github.com/stanislavbebej/ejks/commit/16d58629950afe7261bef64022ad17b68b757dc5))
+
 ## [2.4.6](https://github.com/stanislavbebej/ejks/compare/v2.4.5...v2.4.6) (2025-07-10)
 
 
