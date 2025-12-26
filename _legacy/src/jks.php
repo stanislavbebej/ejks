@@ -27,7 +27,7 @@ if (empty($_GET['id'])) {
   <div data-role="page" id="piesen_<?php echo $piesen ?>" class="ui-page-theme-b">
     <div data-role="header">
       <h1><?php echo $piesen ?></h1>
-      <a href="/" class="ui-btn-right ui-btn ui-btn-icon-notext ui-icon-search"></a>
+      <a href="./" class="ui-btn-right ui-btn ui-btn-icon-notext ui-icon-search"></a>
     </div>
     <div role="main" class="ui-content">
       <?php

@@ -69,7 +69,7 @@ $transform_array = array(
     <div data-role="footer" data-position="fixed">
       <div data-role="navbar">
         <ul>
-          <li><a href="/" data-icon="search" class="ui-state-disabled"></a></li>
+          <li><a href="./" data-icon="search" class="ui-state-disabled"></a></li>
           <li><a href="info.html" data-icon="info" data-transition="none"></a></li>
         </ul>
       </div>
