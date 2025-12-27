@@ -1,0 +1,9 @@
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "_deps/ejks"]
+	path = _deps/ejks
+	url = https://github.com/stanislavbebej/ejks.git
+[submodule "hugo/themes/PaperMod"]
+	path = hugo/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
