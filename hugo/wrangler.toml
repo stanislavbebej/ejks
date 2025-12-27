@@ -1,4 +1,4 @@
-name = "hosting-cloudflare-worker"
+name = "ejks"
 compatibility_date = "2025-12-27"
 
 [build]
