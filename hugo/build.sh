@@ -60,7 +60,9 @@ main() {
   fi
 
   # Create content
-  chmod a+x content.sh && ./content.sh
+  printenv | sort -u
+  exit
+  chmod a+x content.sh && ./content.sh 2>/dev/null
 
   # Build the site
   echo "Building the site..."
