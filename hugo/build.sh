@@ -60,13 +60,11 @@ main() {
   fi
 
   # Create content
-  printenv | sort -u
-  exit
   chmod a+x content.sh && ./content.sh 2>/dev/null
 
   # Build the site
   echo "Building the site..."
-  hugo --gc --minify --baseURL $CF_PAGES_URL
+  hugo --gc --minify
 
 }
 
