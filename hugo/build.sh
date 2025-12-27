@@ -64,7 +64,7 @@ main() {
 
   # Build the site
   echo "Building the site..."
-  hugo --gc --minify
+  hugo --gc --minify --baseURL $CF_PAGES_URL
 
 }
 
