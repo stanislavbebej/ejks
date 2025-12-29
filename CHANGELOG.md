@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/stanislavbebej/ejks/compare/v2.5.0...v3.0.0) (2025-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Hugo migration
+
+### Features
+
+* Hugo migration ([df4c991](https://github.com/stanislavbebej/ejks/commit/df4c99166d40004ce634154bfe29dccd96fa1015))
+
 ## [2.5.0](https://github.com/stanislavbebej/ejks/compare/v2.4.6...v2.5.0) (2025-12-26)
 
 
