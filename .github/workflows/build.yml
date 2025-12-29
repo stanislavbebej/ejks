@@ -2,8 +2,8 @@ name: Build content
 
 on:
   push:
-    paths:
-      - db/jks.csv
+    # paths:
+    #   - db/jks.csv
   workflow_dispatch:
 
 permissions:
