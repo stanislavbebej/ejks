@@ -1,0 +1,50 @@
+baseURL: https://ejks.sk/
+languageCode: en-us
+title: Jednotný Katolícky Spevník
+theme: ["PaperMod"]
+
+defaultContentLanguage: sk
+enableEmoji: true
+enableRobotsTXT: true
+menu:
+  main:
+    - name: Info
+      pageRef: /info.md
+    - name: Noty
+      pageRef: /noty
+    - name: Piesne
+      pageRef: /piesne
+    - name: Vyhľadať
+      pageRef: /
+minify:
+  disableXML: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+pagination:
+  pagerSize: 25
+  path: strana
+params:
+  analytics:
+    google:
+      SiteVerificationTag: "WqFKUIib8zkyXMbTeCVDZSbFar2epk_6i8oUAqNceLc"
+  DateFormat: 2.1.2006
+  ShowPostNavLinks: true
+  assets:
+    apple_touch_icon: ico/apple-touch-icon.png
+    favicon: ico/favicon.ico
+    favicon16x16: ico/favicon-16x16.png
+    favicon32x32: ico/favicon-32x32.png
+    safari_pinned_tab: ico/favicon-32x32.png
+  description: Jednotný Katolícky Spevník
+  disableSpecial1stPost: true
+  env: production
+  fuseOpts:
+    ignoreDiacritics: true
+    keys:
+      - title
+      - content
+  hideFooter: true
+pluralizeListTitles: false
