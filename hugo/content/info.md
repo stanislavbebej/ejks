@@ -13,7 +13,6 @@ Môj projekt [elektronickej JKS](https://www.ejks.sk/) sa snaží o stránku s t
 - prispôsobená pre mobilné zariadenia
 - jednoduchá a prehľadná
 - rýchla a bez zbytočných obrázkov
-- prispôsobiteľná potrebám používateľa
 - bez chýb a preklepov
 - na ľahko zapamätateľnej adrese
 - zadarmo a bez reklám
