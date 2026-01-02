@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.1.0](https://github.com/stanislavbebej/ejks/compare/v3.0.0...v3.1.0) (2026-01-02)
+
+
+### Features
+
+* **306:** Ó, Spasiteľ všetkých ľudí ([f97db33](https://github.com/stanislavbebej/ejks/commit/f97db338dd8e159635defce836a6545e2f9d6981))
+* **366:** Pozdravená buď, Mária ([0776aa7](https://github.com/stanislavbebej/ejks/commit/0776aa7d735d10d1dcd0daf3cce314a10e2150bc))
+
+
+### Bug Fixes
+
+* **277:** chybný názov piesne ([f539e37](https://github.com/stanislavbebej/ejks/commit/f539e376062d57977ace6b498f434930061a4d05))
+
 ## [3.0.0](https://github.com/stanislavbebej/ejks/compare/v2.5.0...v3.0.0) (2025-12-29)
 
 
