@@ -34,7 +34,7 @@ jobs:
 
       - name: Setup Pages
         id: setup-pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build content
         id: build-content
@@ -79,4 +79,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
