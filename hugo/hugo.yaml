@@ -1,5 +1,5 @@
 baseURL: https://ejks.sk/
-languageCode: en-us
+locale: en-us
 title: Jednotný Katolícky Spevník
 theme: ["PaperMod"]
 
