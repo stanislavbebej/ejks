@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.2.0](https://github.com/stanislavbebej/ejks/compare/v3.1.0...v3.2.0) (2026-06-14)
+
+
+### Features
+
+* **333:** Hor' sa, srdcia (Mariánska hymna) ([5c5bfa5](https://github.com/stanislavbebej/ejks/commit/5c5bfa56d17a2039886a318eb1d7ac0f47aab3f2))
+
+
+### Bug Fixes
+
+* apostrophe ([3ce061a](https://github.com/stanislavbebej/ejks/commit/3ce061adcb254f666ed0c2ccb68c682430e7e687))
+* apostrophe collision in metadata ([5d672a2](https://github.com/stanislavbebej/ejks/commit/5d672a2dc6f3ffb049a3550b47fdf6f8803b6bd8))
+* broken search after theme update ([1099cee](https://github.com/stanislavbebej/ejks/commit/1099ceed277ea48881243ef4dc6623e42e15d2fa))
+* update Hugo and PaperMod theme ([c45b0bb](https://github.com/stanislavbebej/ejks/commit/c45b0bb7bc323fe7d0836627a6b011ef3661f415))
+
 ## [3.1.0](https://github.com/stanislavbebej/ejks/compare/v3.0.0...v3.1.0) (2026-04-23)
 
 
