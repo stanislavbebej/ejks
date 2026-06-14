@@ -21,7 +21,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Prepare container
         run: |
@@ -46,7 +46,7 @@ jobs:
 
           # Install build tools
           apk --no-cache add sqlite
-          wget -qO - https://github.com/tdewolff/minify/releases/download/v2.23.11/minify_linux_amd64.tar.gz | tar -zxf - -C /usr/local/bin minify
+          wget -qO - https://github.com/tdewolff/minify/releases/download/v2.24.13/minify_linux_amd64.tar.gz | tar -zxf - -C /usr/local/bin minify
 
           # Prepare source files
           cp -R db/* _legacy/src/* $TMP_DIR
