@@ -14,7 +14,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     env:
       HUGO_VERSION: 0.163.1
     steps:
@@ -42,7 +42,7 @@ jobs:
 
             if [[ $strofa -eq 0 ]]; then
               hugo new content $CONTENT_FILE -f
-              sed -i "s|title: .*|title: '${piesen}. ${text}'|" content/$CONTENT_FILE
+              sed -i "s|title: .*|title: \"${piesen}. ${text}\"|" content/$CONTENT_FILE
               continue
             fi
             echo "${strofa}. ${text}" >>content/$CONTENT_FILE
