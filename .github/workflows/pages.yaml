@@ -28,7 +28,7 @@ jobs:
           apk update && apk --no-cache add git git-lfs
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
