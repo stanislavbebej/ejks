@@ -28,13 +28,13 @@ jobs:
           apk update && apk --no-cache add git git-lfs
 
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
         with:
           lfs: true
 
       - name: Setup Pages
         id: setup-pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6.0.0
 
       - name: Build content
         id: build-content
@@ -73,10 +73,10 @@ jobs:
           PAGES_URL: ${{ steps.setup-pages.outputs.base_url }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: ${{ steps.build-content.outputs.static_dir }}
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1
