@@ -3,6 +3,7 @@ name: Build content
 on:
   push:
     paths:
+      - .github/workflows/build.yml
       - db/jks.csv
   workflow_dispatch:
 
@@ -16,7 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-slim
     env:
-      HUGO_VERSION: 0.163.1
+      HUGO_VERSION: 0.168.0
     steps:
       - name: Install Hugo CLI
         run: |
