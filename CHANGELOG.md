@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.2.1](https://github.com/stanislavbebej/ejks/compare/v3.2.0...v3.2.1) (2026-10-15)
+
+
+### Bug Fixes
+
+* **hugo:** upgrade to v0.168.0 ([1ab3420](https://github.com/stanislavbebej/ejks/commit/1ab3420c626c7c48914b550d9f23b9f786596af2))
+* **theme:** upgrade to latest commit ([19239e7](https://github.com/stanislavbebej/ejks/commit/19239e7f45e2c492d731de593e8360ce8a5020e6))
+
 ## [3.2.0](https://github.com/stanislavbebej/ejks/compare/v3.1.0...v3.2.0) (2026-06-14)
 
 
